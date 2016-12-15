@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 80%;
+  max-height:500px;
+  }
+
+.center_image{
+  text-align: center;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/u/16365575/images/bikebump/logo_black.png" alt="bikebump logo"></p>
+
+<h1 id="toc_0">bikebump</h1>
+
+<p>design brief</p>
+
+<p>Yasushi Sakai</p>
+
+<h2 id="toc_1">Presupposition</h2>
+
+<p>The project is jointed with my thesis project and idea development was undergoing in the same time as the class proceeded. Within the semester, there was a big transition regarding the interaction with the technology which at first was a mobile phone app, asking people to push buttons between their commute. From user studies and various feedback, the project had changed having the phone detecting bicycle ring bells as the trigger of various responses. Although it may be preferable to have a clean state of the project limiting to report either the initial version or the second version, I felt it may be useful to show how the project shifted from user input and feedback.</p>
+
+<h2 id="toc_2">Background</h2>
+
+<h3 id="toc_3">bike lanes</h3>
+
+<ul>
+<li>Bicycle accidents still catch a lot of attention from the public. There is still space to have improvment on such bike lanes.</li>
+<li>Study shows that investing for bike lanes is very efficiant when compared by QALY. QALY is an abbreviation of Quality Adjusted Life Year, and shows the necessary budget to gain one year of perfect health for one person. While vaccines are the cheapest costing $100, bike lanes are considered to be efficient (1,297) compared to Health Insureance (35,000) and HIV/AIDS (50,000) treatment.</li>
+</ul>
+
+<h3 id="toc_4">Urban Design in general</h3>
+
+<ul>
+<li>Urban Planning has been a field for experts, lacking ways to include the citizens. The public is demanding to open this process stronger than before, having more tools to express their opinions. The current method of community engagement, such as meetings and workshops are required by law, yet is working poorly to incoporate the citizens thoughts. </li>
+</ul>
+
+<h3 id="toc_5">related work</h3>
+
+<ol>
+<li><p>waze</p>
+
+<p>The waze app is a bottom-up car navigation tool to notify each other road conditions in real-time. Users can either actively report various road situations by putting icons on maps, or passively contribute by sending speed based on how much the vehicle moved in latitude-longitude coordinates in a given route. This app demonstrates a way of distributed navigation in a structured manner but does not tie to an urban planning intervention.</p></li>
+<li><p>PlacePulse by Macro Connections (Salesses, Schechtner and Hidalgo 2013)</p>
+
+<p>Place Pulse developed by Macro Connections is a survey platform that has collected more than 1.4 million responses asking a simple question regarding perception on urban street views. This is currently the largest data set on crowd source attempts relating to urban planning. This example introduces the potential to have a bottom-up approach, while the intention is focused on collecting, visualizing and analyzing data. This study tries to reverse the process by asking simple questions on the site, and examine whether a system can collect proposals. </p></li>
+<li><p>ActionPath by Civic Media (Graeff 2014)</p>
+
+<p>ActionPath developed by Civic Media research group is a similar approach using mobile devices and geofences to collect citizen’s opinion. The topic is build consensus on an urban development plan proposed by the planners. As Erhardt claimed , these tools need further iteration and improvement to realize citizen participation and shall not be satisfied just to be a method to acquire data. “Bikebump” aligns to this by having two strategies; concentrating on painting bike lanes and asking for possible solutions. Having a narrow focus on painting roads is also advantageous since they are relatively inexpensive, fast to implement, and easy to undo. Through this study, I would like to think the potential having citizens participate on cheap, rapid and iterative urban planning methods.</p></li>
+<li><p>Finding Places by Changing Places (Larson and Noyman 2016)</p></li>
+<li><p>Changing Places conducted a project in 2016 called “Finding Places” which is specifically targeted refugee allocation in Hamburg Germany. A tangible interface known as the City Scope developed by the same group was used for collective decision and consensus building. Undergoing more than dozens of community engagement meetings, the project quickly identified prospective places to welcome refugees. The physicality of the interface is both an advantage and the disadvantage. Constrained by the size, it will limit the number of people who can gather, yet the rich interaction will occur by enabled by conversation. It is clear that the project had some attempt to record this rich interaction since the table featured the ability to put on comments for feedback.</p></li>
+</ol>
+
+<h2 id="toc_6">Ecosystem map</h2>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/s/tqj4g6jp4ty8xkm/ecosystem.png?" alt="the ecosystem"></p>
+
+<h2 id="toc_7">Ethnographic findings</h2>
+
+<h3 id="toc_8">settings</h3>
+
+<p>Static observation was conducted at the intersection of <a href="https://www.google.com/maps/@42.3480788,-71.0881481,97m/data=!3m1!1e3">new burry and Mass Ave.</a> in Oct. 10th (Monday, Columbus day) around noon. The Observer(myself) was looking down the street from the 3rd floor of T.J. Max building. (Concurrently taking care my 8-month daughter in the stroller, which I think it helped me disguise being weird taking notes of the street). No active interaction occurred with the bikers.</p>
+
+<h3 id="toc_9">findings</h3>
+
+<ul>
+<li><p>There were 92 bikers crossing the road and more than half was coming from the Cambridge area to head to the south end</p></li>
+<li><p>This number is rather small compared to the average which is reasonable because it was a holiday. Roughly 80% of the people did not wait or stop at the intersection regardless of the signs. This is a typical behavior riding bikes having both the maneuverability of a car in low speed and the small occupancy of road width. Most people used the designated bike lane between the parallel parking and the car lane. 10 people used Hubway, a local bike sharing service, all of the trips were heading to the south end.</p></li>
+<li><p>The assumption that there will be very few or no interaction with smartphones while riding was proved wrong. The observation showed that there is a chance to encounter several people who used their smartphone and 10 percent had a smartphone mount installed on their bike.</p></li>
+<li><p>Two cyclists used the sidewalk. Driving on sidewalk is considered to be illegal but is an unavoidable option when the biker considers it unsafe to take the shared lane. Apperantly there was a police officer in near proximity, but did not react. </p></li>
+<li><p>It is evident that this static observation will have different result depending on the location, day of the week, and time. It was a holiday noon, which could be different to a normal workday in the rush hour. Despite that it was a holiday likely to have leaisure riding with couples and family, bikers were very often alone. Only one family crossed the road, and others were taking a solitude trip.</p></li>
+</ul>
+
+<h3 id="toc_10">datasheet</h3>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1V0XRuaAdQnClFRGBoy7kQQu7TM8vW8mER2gWFrHGfUo/edit">counting bicycles that has smartphone mounts</a></p>
+
+<h2 id="toc_11">Interview findings</h2>
+
+<h3 id="toc_12">Biker</h3>
+
+<p>Inman square is horrible, thats a well known spot to be aware of.</p>
+
+<p>Putnum is also frieghtneing, bikers tend to look for safer alternatives, but Putnum Avenue is the kind there is no other to go south and forced to pass that. Especially where it juctions with western avenue is where I feel unsecure.</p>
+
+<h3 id="toc_13">Driver (Uber)</h3>
+
+<h4 id="toc_14">Do you like bikers?</h4>
+
+<p>No. Totally no. They are crazy. They are totally out of control.
+Do you know what I call them? I call them wolves of Cambridge, man they are crazy. </p>
+
+<p>They have no lights, no nothing, even no helmets. They just glide in the dark, think the can see without light. </p>
+
+<h4 id="toc_15">Have you ever encountered a dangerous situation?</h4>
+
+<p>Yeah, I remember one time. Back when I was driving a taxi. By the way, I was a taxi driver for ten years, and once a bus driver too, you know, you need to keep your living. And that happened when my passenger tried to open the door, I knew that he was coming so I tried to stop him shouting &quot;stop, stop, stop&quot; but it was too late, he opened the right door and the bike just flew few meters forward, passenger was like &quot;oh my god what I&#39;ve done&quot;, yeah it was crazy. I guess the biker didn&#39;t think the right door will open because they usually are aware of the parked car, the left one.</p>
+
+<h4 id="toc_16">Was he injured?</h4>
+
+<p>No, not really, I guess he flew nicely, but it was incredible.</p>
+
+<h4 id="toc_17">Is there the number of bikers increasing?</h4>
+
+<p>Yeah, in Cambridge yes certainly. There everywhere now. Sometimes I take more caution than the front looking at the side from the mirrors double checking whether he&#39;s not there</p>
+
+<h3 id="toc_18">City Hall (chief of streets)</h3>
+
+<ul>
+<li>(given the button push interface) there may need to be other interfaces to report.</li>
+<li>We are always hoping to be able to compare data before and after we improve the bike lanes. There is no way to collect granular data regarding time. This way we can accurately compare how effective each intervention is.</li>
+<li>We are also interested on how the bikers precieve different changes. Budget and accident reports are the most dominant factors we consider, but I beleive that we have a better indicator. For instance, painting a shared bike lane mark is not so different to painting bike lanes to green, but I think there is a major difference on how we feel about them.</li>
+</ul>
+
+<h3 id="toc_19">Public Health Researcher (have been focusing on bikes)</h3>
+
+<ul>
+<li>Bike research focuses on improving negative aspects, accidents and potholes.</li>
+<li>Data collection has been done in lots of different ways but only few focus on achieving positive reports.</li>
+<li>For the execution side, often highway infrastucture guidelines and knowhows respond. Which often limits to be a engineering problem, relying on reductionism.</li>
+<li>When collecting data, asking for gender is useful. Woman tend to be sensitive reporting</li>
+<li>Energy and enviromental load has started to be considered in urban infrastructure investemnt, yet little for public health such as street configuration to burn more energy.</li>
+</ul>
+
+<h3 id="toc_20">pedestrian</h3>
+
+<ul>
+<li>with bikers
+
+<ul>
+<li>A lot of conversation is around bikes and cars, but sometimes it is dangerous for us as well, pedestrians tend to be a vulnerable population (elderly or babies).</li>
+<li>It is hard to decide whether we need a separated bike lane. It&#39;s true that it gets safe, but then we need to sacrifice what we have for walking.</li>
+</ul></li>
+</ul>
+
+<h2 id="toc_21">Design challenge statement</h2>
+
+<ul>
+<li>Can we have rich data that illustrates that improvment is needed using a simple system</li>
+<li>What makes the bikers (citizens) report and respond to the situation that is needed help</li>
+<li>How do we know which places are dangerous and which places are not?</li>
+<li>How do we know whether we have a bike lane in the first place? Data of the current situation is already lacking</li>
+</ul>
+
+<h2 id="toc_22">Levers of Change</h2>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/s/wp3yv8aha31yp17/leversofchange.png" alt="How the image tries to go through change"></p>
+
+<h2 id="toc_23">Ideation</h2>
+
+<ol>
+<li>Make a Huge Bicycle that occupies the width of a car</li>
+<li>LED interface that communicates with the drivers</li>
+<li>Crowdsource data whether there is a bike lane or not </li>
+<li>Collect data on how people think on road and share them with othersAsk them how the infrastructure will improve the current situation</li>
+<li>Guerrilla act on painting dangerous roads</li>
+<li>Guerrilla act on occupy parking lots with door less objects</li>
+<li>Design a parking structure</li>
+<li>Close roads, make it a plaza where anyone can meet</li>
+<li>Put roof structure in intersections so that bikes and peds can avoid rain and snow</li>
+<li>Put signage showing the average speed of cars and bicycles (rush hour)</li>
+<li>Hobo signs for bikers</li>
+<li>Record accelerometer data to detect sudden bumps</li>
+<li>Detect ring bells to indicate the place is unsafe (recording sound)</li>
+</ol>
+
+<h2 id="toc_24">Intervention sketch</h2>
+
+<h3 id="toc_25">Method</h3>
+
+<p>The application will have three stages to engage the community in the following order. Each step will incorporate a technique to trigger interaction between the participants.</p>
+
+<h4 id="toc_26">1. Query current condition to identify bike lane security</h4>
+
+<p>By using either the web browser application or the mobile application interface (from now on “interface”), users will report the current riding experience through a four-choice question. When the report is to be the first within a 10m radius, a virtual boundary will be defined often referred as a geofence. The next user entering this boundary will be asked the same question to reinforce the initial (or past) responses. By enabling to see responses from others, it aims for interactions and provide different views of the road.</p>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/u/16365575/images/bikebump/button_interface.png" alt="button_interface"></p>
+
+<p>people have provided feedback that although the interface is simple, there is still concerns in safety interacting with smartphones devices while riding.</p>
+
+<p>The latest version utilizes a sound detection method for ring bells, often installed in handle bars.</p>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/u/16365575/images/bikebump/sound_detection.png" alt=""></p>
+
+<h4 id="toc_27">2. Visualize acquired report data</h4>
+
+<p>The collected data will be visualized on a map showing the geofence and aggregated responses. It will also show the target road and which side of the road, by calculating the closest road from GIS and Open Street Map data. </p>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/u/16365575/images/bikebump/map.png" alt=""></p>
+
+<p>it will also show recordings of commutes.</p>
+
+<h4 id="toc_28">3. Solicit solutions by selecting from possible diagrammatic solutions</h4>
+
+<p>After acquiring the road condition, the system will ask for proposals to improve the situation. Similar to the first step, the user will choose from multiple options through the interface. The system will show tradeoff elements for each intervention, where the elements are budget and impact of thru-put for cars and bicycles. This stage is open to people using different modes of transportation.</p>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/u/16365575/images/bikebump/proposal.png" alt=""></p>
+
+<h4 id="toc_29">4. Collectively prioritize the provided solutions</h4>
+
+<p>Users can then vote for which plan to execute, this is done by either voting to the specific plan, or user. Thus, the system will be able to sort by collective interest.</p>
+
+<h3 id="toc_30">Diagram</h3>
+
+<p class="center_image"><img src="https://dl.dropboxusercontent.com/s/yr48w7z0a7tfsit/intervention_sketch.png" alt="diagram"></p>
+
+<h2 id="toc_31">User testing</h2>
+
+<h3 id="toc_32">Interface</h3>
+
+<p>The participants responded differently depending on the confidence of riding bikes. One female participant whom do not ride bikes daily pointed that she will not look at the phone and avoid any interaction with the phone. A male user showed remarked that he will need time to get used to pushing responses, but is confident that he will be able to do it.</p>
+
+<h3 id="toc_33">Others</h3>
+
+<p>One participant stated that if the system askes to log-in or have authentification, then the service suddenly starts to be troublesome.</p>
+
+<h2 id="toc_34">Challenges</h2>
+
+<h3 id="toc_35">Technical Challenges</h3>
+
+<ul>
+<li>accuracy of GPS in smartphones</li>
+<li>strategy to get rid of false positives</li>
+<li>different devices with different microphone capabilities</li>
+<li>ring bells sound different in different weather</li>
+<li>Data on bike lanes are already limited, without having a way to know </li>
+</ul>
+
+<h3 id="toc_36">Social Challenges</h3>
+
+<ul>
+<li>The interface for people making (complicated) urban descisions has not been researched that much.
+
+<ul>
+<li><a href="https://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199">Pattern Language</a> - Christopher Alexander</li>
+<li><a href="https://en.wikipedia.org/wiki/Wizard_(software)">widzards</a> in OS design, for asking preference on applications.</li>
+</ul></li>
+<li>ways to collect data who do not own a smartphone, kids and elderly. (by Anne Lusk)</li>
+</ul>
+
+<h2 id="toc_37">Next steps</h2>
+
+<ul>
+<li><p>Safer route navigation
+Once having data indicating which location is safer, it is possible to provide alternative routes to bikers to take a safer and better road. This could function as the main incentive to continue to participate in data gathering.</p></li>
+<li><p>Auto detection of dangerous conditions
+Similar to the approach of Place Pulse and Street Score, it is possible to visualize the risk of roads. By accumulating enough data, we could automate dangerous road detection by image processing and statistical analysis. It is also possible to classify the sound recordings and analyze if there is specific charactersitics that correlates to human reportings. (both good and bad) </p></li>
+</ul>
+
+<h2 id="toc_38">Reference</h2>
+
+<ul>
+<li>Andersen, Michael. 2014. &quot;BIKE USE IS RISING AMONG THE YOUNG, BUT IT IS SKYROCKETING AMONG THE OLD.&quot; people for bikes. June 19. Accessed October 30, 2016. http://www.peopleforbikes.org/blog/entry/bike-use-is-rising-among-the-young-but-it-is-skyrocketing-among-the-old.</li>
+<li>Byrne, David. 2010. Bicycle Diaries. New York: Penguin Books.</li>
+<li>Churchman, C.West. 1967. &quot;Wicked Problems.&quot; Management Science 14 (4): B-141.</li>
+<li>Davis, Benjamin, and Phineas Baxandall. 2013. &quot;TRANSPORTATION IN TRANSITION.&quot;</li>
+<li>Graeff, Erhardt. 2014. &quot;Crowdsourcing as Reflective Political Practice: Building a Location-based Tool for Civic Learning and Engagement.&quot; IPP 2014: Crowdsourcing for Politics and Policy. Oxford: Oxford University. 1-36.</li>
+<li>Gu, Jing, Babak Mohit, and Peter Alexander Muennig. 2016. &quot;The cost-effectiveness of bike lanes in New York City.&quot; Injury Prevention 1-5.</li>
+<li>Karim, Dewan Masud. 2015. &quot;Narrower Lanes, Safer Streets .&quot; CITE Conference Regina 1-21.</li>
+<li>Larson, Kent, and Ariel Noyman. 2016. Shifting Priorities, Finding Places. September 14. Accessed October 30, 2016. https://medium.com/mit-media-lab/shifting-priorities-finding-places-9ad3bdbe38b8#.koyqf242e.</li>
+<li>Lessig, Lawrence. 2006. Code : version 2.0. New York: Basic Books.</li>
+<li>Sadik-Khan, Janette, and Seth Solomonow Solomonow. 2016. Streetfight: Handbook - for an Urban Revolution. New York, New York: Viking.</li>
+<li>Salesses, Philip, Katja Schechtner, and César A. Hidalgo. 2013. &quot;The Collaborative Image of The City: Mapping the Inequality of Urban Perception.&quot; PLOS ONE 8 (7): 1-12.</li>
+</ul>
+
+
+
+
+</body>
+
+</html>
